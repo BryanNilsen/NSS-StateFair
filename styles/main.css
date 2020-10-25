@@ -59,20 +59,25 @@ h6 {
   margin: 0.2rem 0.2rem;
 }
 
+button {
+  color: white;
+  border: 2px solid rgba(0, 0, 0, 0.555);
+  border-radius: none;
+}
 .eater {
-  background-color: fuchsia;
+  background-color: rgb(204, 0, 204);
 }
 
 .rider {
-  background-color: dodgerblue;
+  background-color: rgb(6, 98, 190);
 }
 
 .bigSpender {
-  background-color: orange;
+  background-color: rgb(230, 149, 0);
 }
 
 .player {
-  background-color: lawngreen;
+  background-color: rgb(91, 160, 22);
 }
 
 .gawker {

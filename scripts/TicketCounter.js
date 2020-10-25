@@ -12,14 +12,14 @@ eventHub.addEventListener("ticketPurchased", (event) => {
   } else {
     allTickets[ticketType] = 1;
   }
-  console.log(allTickets);
   const sumValues = Object.values(allTickets).reduce((a, b) => a + b);
-  console.log("sumValues: ", sumValues);
-
   ticketCount = sumValues;
   TicketCount();
 });
 
 export const TicketCount = () => {
-  contentTarget.innerHTML = `Total tickets purchased: ${ticketCount}`;
+  contentTarget.innerHTML = `<p>Total tickets purchased: ${ticketCount}</p>`;
+  for (const [key, value] of Object.entries(allTickets)) {
+    contentTarget.innerHTML += ` ${key}: ${value} </br>`;
+  }
 };

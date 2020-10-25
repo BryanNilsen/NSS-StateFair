@@ -43,19 +43,19 @@ export const TicketBooth = () => {
   // ensure all button IDs end with '--Ticket'
   contentTarget.innerHTML = `
         <div class="ticketBooth">
-            <button id="ride--Ticket">Ride Ticket</button>
+            <button id="ride--Ticket" class="rider">Ride Ticket</button>
         </div>
         <div class="ticketBooth">
-            <button id="food--Ticket">Food Ticket</button>
+            <button id="food--Ticket" class="eater">Food Ticket</button>
         </div>
         <div class="ticketBooth">
-            <button id="game--Ticket">Game Ticket</button>
+            <button id="game--Ticket" class="player">Game Ticket</button>
         </div>
         <div class="ticketBooth">
-            <button id="show--Ticket">Sideshow Ticket</button>
+            <button id="show--Ticket" class="gawker">Sideshow Ticket</button>
         </div>
         <div class="ticketBooth">
-            <button id="package--Ticket">Full Package Ticket</button>
+            <button id="package--Ticket" class="bigSpender">Full Package Ticket</button>
         </div>
     `;
 };
